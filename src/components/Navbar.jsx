@@ -28,7 +28,7 @@ const Navbar = () => {
         </div>
         <div className='hidden sm:flex gap-3 text-2xl'>
             <a href="https://github.com/IIArenII" target='_blank' className=' hover:text-gray-300'><FaGithub /></a>
-            <a href="https://www.linkedin.com/in/abdullah-eren-evli-a62b932b7/" target='_blank' className=' hover:text-gray-300'><FaMedium /></a>
+            <a href="https://www.linkedin.com/in/abdullah-eren-evli-a62b932b7/" target='_blank' className=' hover:text-gray-300'><FaLinkedin /></a>
         </div>
         <div
             className={`fixed top-0 right-0 h-full w-56 bg-gray-800 text-white shadow-lg  ${
