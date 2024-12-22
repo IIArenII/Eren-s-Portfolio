@@ -22,13 +22,13 @@ const Navbar = () => {
           {isOpen ? "" : "☰"}
         </button>
         <div className='hidden sm:flex items-center text-xl gap-6'>
-            <a href="">Home</a>
-            <a href="">Tech</a>
-            <a href="">Contact</a>
+            <a href="#home" className=' hover:text-gray-300'>Home</a>
+            <a href="#tech" className=' hover:text-gray-300'>Tech</a>
+            <a href="#contact" className=' hover:text-gray-300'>Contact</a>
         </div>
         <div className='hidden sm:flex gap-3 text-2xl'>
-            <a href=""><FaGithub /></a>
-            <a href=""><FaMedium /></a>
+            <a href="#" className=' hover:text-gray-300'><FaGithub /></a>
+            <a href="#" className=' hover:text-gray-300'><FaMedium /></a>
         </div>
         <div
             className={`fixed top-0 right-0 h-full w-56 bg-gray-800 text-white shadow-lg  ${
