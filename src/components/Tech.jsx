@@ -6,13 +6,13 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 
 const Tech = () => {
   return (
-    <div className='flex flex-col w-full min-h-screen justify-center items-center'>
+    <div className='flex flex-col w-full min-h-[400px] justify-center items-center'>
       <motion.div 
         initial={{ y:50, opacity:0.1}}
         whileInView={{ y:0, opacity:1}}
         transition={{ duration:0.5}}
         viewport={{ once:true }}           
-      className='font-sans font-semibold text-4xl'>Technologies</motion.div>
+      className='font-sans text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text p-5'>Technologies</motion.div>
       <motion.div
         initial={{ y:50, opacity:0.1}}
         whileInView={{ y:0, opacity:1}}
