@@ -21,8 +21,10 @@ const Navbar = () => {
         >
           {isOpen ? "" : "☰"}
         </button>
-        <div className='hidden sm:flex items-center text-xl gap-6'>
+        <div className='hidden sm:flex items-center text-xl gap-9'>
             <a href="#home" className=' hover:text-gray-300'>Home</a>
+            <a href="#About" className=' hover:text-gray-300'>About Me</a>
+            <a href="#Projects" className=' hover:text-gray-300'>Projects</a>
             <a href="#tech" className=' hover:text-gray-300'>Tech</a>
             <a href="#contact" className=' hover:text-gray-300'>Contact</a>
         </div>
@@ -44,6 +46,12 @@ const Navbar = () => {
         <div className="flex flex-col items-start gap-6 p-6 mt-12">
           <a href="" className="text-xl hover:text-gray-300">
             Home
+          </a>
+          <a href="" className="text-xl hover:text-gray-300">
+            About Me
+          </a>
+          <a href="" className="text-xl hover:text-gray-300">
+            Projects
           </a>
           <a href="" className="text-xl hover:text-gray-300">
             Tech
