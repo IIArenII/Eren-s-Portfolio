@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { Link } from 'react-scroll';
 
 const Navbar = () => {
 
@@ -9,6 +10,10 @@ const Navbar = () => {
         setIsOpen(!isOpen);
     }
 
+    const handleScroll = () => {
+      // Scroll down by 300px
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+  };
 
   return (
     <div className='flex w-full justify-between items-center px-4 md:px-9 lg:px-16 border-b-2 border-b-gray-700 py-5'>
@@ -21,13 +26,23 @@ const Navbar = () => {
         >
           {isOpen ? "" : "☰"}
         </button>
-        <div className='hidden sm:flex items-center text-xl gap-9'>
-            <a href="#home" className=' hover:text-gray-300'>Home</a>
-            <a href="#About" className=' hover:text-gray-300'>About Me</a>
-            <a href="#Projects" className=' hover:text-gray-300'>Projects</a>
-            <a href="#tech" className=' hover:text-gray-300'>Tech</a>
-            <a href="#contact" className=' hover:text-gray-300'>Contact</a>
-        </div>
+        <ul className='hidden sm:flex items-center text-xl gap-9'>
+                <li className='hover:text-gray- cursor-pointer'>
+                    <Link to="home" smooth={true} onClick={handleScroll} duration={500}>Home</Link>
+                </li>
+                <li className='hover:text-gray- cursor-pointer'>
+                    <Link to="about" smooth={true} duration={500}>About</Link>
+                </li>
+                <li className='hover:text-gray- cursor-pointer'>
+                    <Link to="projects" smooth={true} duration={500}>Projects</Link>
+                </li>
+                <li className='hover:text-gray- cursor-pointer'>
+                    <Link to="tech" smooth={true} duration={500}>Tech</Link>
+                </li>
+                <li className='hover:text-gray- cursor-pointer'>
+                    <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                </li>
+            </ul>
         <div className='hidden sm:flex gap-3 text-2xl'>
             <a href="https://github.com/IIArenII" target='_blank' className=' hover:text-gray-300'><FaGithub /></a>
             <a href="https://www.linkedin.com/in/abdullah-eren-evli-a62b932b7/" target='_blank' className=' hover:text-gray-300'><FaLinkedin /></a>
@@ -43,23 +58,23 @@ const Navbar = () => {
             >
           ✖
         </button>
-        <div className="flex flex-col items-start gap-6 p-6 mt-12">
-          <a href="" className="text-xl hover:text-gray-300">
-            Home
-          </a>
-          <a href="" className="text-xl hover:text-gray-300">
-            About Me
-          </a>
-          <a href="" className="text-xl hover:text-gray-300">
-            Projects
-          </a>
-          <a href="" className="text-xl hover:text-gray-300">
-            Tech
-          </a>
-          <a href="" className="text-xl hover:text-gray-300">
-            Contact
-          </a>
-        </div>
+        <ul className="flex flex-col items-start gap-6 p-6 mt-12">
+                    <li className='hover:text-gray-300'>
+                        <Link to="home" smooth={true} duration={500}>Home</Link>
+                    </li>
+                    <li className='hover:text-gray-300'>
+                        <Link to="about" smooth={true} duration={500}>About</Link>
+                    </li>
+                    <li className='hover:text-gray-300'>
+                        <Link to="projects" smooth={true} duration={500}>Projects</Link>
+                    </li>
+                    <li className='hover:text-gray-300'>
+                        <Link to="tech" smooth={true} duration={500}>Tech</Link>
+                    </li>
+                    <li className='hover:text-gray-300'>
+                        <Link to="contact" smooth={true} duration={500}>Contact</Link>
+                    </li>
+                </ul>
         <div className="flex gap-6 mt-6 px-6">
           <a  href="https://github.com/IIArenII" target='_blank' className="text-2xl hover:text-gray-300">
             <FaGithub />
@@ -70,7 +85,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 export default Navbar

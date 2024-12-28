@@ -6,7 +6,7 @@ import { BiLogoTailwindCss } from "react-icons/bi";
 
 const Tech = () => {
   return (
-    <div className='flex flex-col w-full min-h-[400px] justify-center items-center'>
+    <div className='flex flex-col w-full min-h-[400px] justify-center items-center' id='tech'>
       <motion.div 
         initial={{ y:50, opacity:0.1}}
         whileInView={{ y:0, opacity:1}}

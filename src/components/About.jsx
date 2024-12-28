@@ -1,15 +1,15 @@
 import React from 'react'
 import {motion} from "framer-motion"
 
-const AboutMe = () => {
+const About = () => {
   return (
-    <motion.div 
+    <motion.div id="about" name="about"
     initial={{ y:50, opacity:0.1}}
     whileInView={{ y:0, opacity:1}}
     transition={{ duration:0.5}}
     viewport={{ once:true }}     
     className="flex flex-col w-full h-[320px] justify-center items-center overflow-auto mt-10">
-        <div 
+        <div id="about"
       
       className='font-sans text-4xl bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text p-5'>About Me</div>
         <p className="w-[300px] md:w-[600px] lg:[850px] text-sm md:text-lg text-white font-sans mt-5 flex justify-center items-center text-center"
@@ -25,4 +25,4 @@ const AboutMe = () => {
   )
 }
 
-export default AboutMe
+export default About
