@@ -4,13 +4,13 @@
 
 html, body {
     height: 100%;
-    overflow-y: auto; /* Scroll çubuğunu aktif eder */
+     /* Scroll çubuğunu aktif eder */
   }
 
   ::-webkit-scrollbar {
     width: 8px;
   }
   ::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #938ea7;
     border-radius: 4px;
   }

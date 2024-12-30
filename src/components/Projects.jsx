@@ -6,7 +6,7 @@ import photo3 from '../images/project3.png'
 
 const Projects = () => {
   return (
-    <div id="projects" className='max-w-[800px] flex justify-center items-center mx-auto h-[410px]'>
+    <div id="projects" className='max-w-full flex justify-center items-center mx-auto h-auto'>
           
     <motion.div 
     initial={{ y:50, opacity:0.1}}

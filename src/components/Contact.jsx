@@ -18,8 +18,8 @@ const Contact = () => {
 
   emailjs
     .sendForm(
-      'service_ttmqo47',
-      'template_2nkjcsk',
+      import.meta.env.VITE_GMAIL_SERVICE_KEY,
+      import.meta.env.VITE_GMAIL_TEMPLATE_KEY,
       form.current,
       import.meta.env.VITE_GMAIL_PUBLIC_KEY 
     )

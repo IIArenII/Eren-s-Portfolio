@@ -5,7 +5,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const Home = () => {
   return (
-    <div className="flex flex-col w-full min-h-screen justify-center items-center overflow-hidden mt-10">
+    <div className="flex flex-col w-full min-h-screen justify-center items-center overflow-hidden mt-10" id="home">
       <motion.img
         initial={{ y: -75, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
